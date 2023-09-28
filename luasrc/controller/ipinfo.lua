@@ -1,7 +1,7 @@
 module("luci.controller.ipinfo", package.seeall)
 
 function index()
-    --entry({"admin", "services", "ipinfo"}, cbi("ipinfo"), _("IP Information"), 10)
+    --entry({"admin", "services", "ipinfo"}, cbi("ipinfo/ipinfo"), _("IP Information"), 10)
     entry({"admin", "services", "ipinfo", "ipstatus"}, call("act_status"))
 end
 
